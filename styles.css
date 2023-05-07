@@ -1,0 +1,261 @@
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F3F5FC;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 25px;
+    padding-top: 30px;
+    width: 80px;
+    height: auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 5%;
+    align-items: flex-start;
+    justify-items: start
+}
+
+.contenedor {
+    width: 100%;
+}
+
+.texto-usuario {
+    background-color: transparent;
+    border: none;
+    color: #0A3871;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    width: 85%;
+    height: 500px;
+    margin-left: 15%;
+    margin-top: 4%;
+    resize: none;
+}
+
+.texto-usuario:focus {
+    outline: none;
+}
+
+.texto-usuario::placeholder {
+    color: #0A3871;
+}
+
+.info {
+    width: 85%;
+    height: 18px;
+    margin-left: 20%;
+    margin-top: 20px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    
+    color: #495057;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+    opacity: 0.8;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+
+    width: 85%;
+    height: 67px;
+    margin-left: 20%;
+    margin-top: 10px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 24px;
+    gap: 8px;
+
+    width: 45%;
+    height: 67px;
+    border-radius: 24px;
+    border: none;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+}
+
+.btn-blue {
+    background: #0A3871;
+    color: #FFFFFF;
+}
+
+.btn-gray {
+    background: #D8DFE8;
+    color: #0A3871;
+}
+
+.btn-gray:hover, .btn-blue:hover {
+    background: #FFFFFF;
+    color: #0A3871;
+}
+
+.mensaje {
+    width: 90%;
+    height: 700px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+#borrar {
+    display: none;
+    margin-top: 10px;
+    margin-left: 90%;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    border: none;
+    color: #0A3871;
+    background-color: #D8DFE8;
+    cursor: pointer;
+}
+
+#borrar:hover {
+    color: #F3F5FC;
+    background-color: #0A3871;
+}
+
+.no-encriptado {
+    display: inline;
+}
+
+.encriptado {
+    display: none;
+}
+
+#img-no-encriptado {
+    position: relative;
+    left: 15px;
+    top: 110px;
+    width: 90%;
+    height: auto;
+}
+
+#mensaje-no-encriptado {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    top: 120px;
+}
+
+#mensaje-no-encriptado h1 {
+    padding: 2% 5%;
+}
+
+#mensaje-no-encriptado p {
+    color: #495057;
+    padding: 1% 3%;
+}
+
+#mensaje-encriptado {
+    width: 90%;
+    height: 530px;
+    margin-left: 5%;
+    padding-right: 5%;
+    position: relative;
+    top: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #495057;
+    white-space: wrap;
+    overflow: scroll;
+}
+
+#mensaje-encriptado::-webkit-scrollbar {
+    width: 5px;
+}
+
+#mensaje-encriptado::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+#mensaje-encriptado::-webkit-scrollbar-thumb {
+    background-color: #0A387150;
+}
+
+#mensaje-encriptado::-moz-scrollbar {
+    width: 5px;
+}
+
+#mensaje-encriptado::-moz-scrollbar-track {
+    background-color: transparent;
+}
+
+#mensaje-encriptado::-moz-scrollbar-thumb {
+    background-color: #0A387150;
+}
+
+#copiar {
+    width: 80%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#copiar-mensaje {
+    color: #495057;
+    font-size: 12px;
+    opacity: 0.5;
+    text-align: center;
+    position: absolute;
+    top: 650px;
+    left: 67%;
+    right: 32px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 8%;
+    color: #FFFFFF;
+    background-color: #0A3871;
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.6;
+    padding: 12px;
+}
+
+footer #name {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
