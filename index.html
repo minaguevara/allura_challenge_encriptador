@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/icon.jpeg">
+    <title>Encriptador de Texto - Alura Challenge</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" alt="Alura Logo" src="img/Logo.png" />
+    </header>
+    <main>
+        <section class="contenedor">
+            <textarea class="texto-usuario" name="texto-usuario" rows="4" cols="50" autofocus required placeholder="Ingrese el texto aquí"></textarea>
+
+            <div class="info">
+                <img src="img/info.png" width="16" height="16" />
+                <p id="info-text">Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="botones">
+                <button class="btn btn-blue" id="encriptar">Encriptar</button>
+                <button class="btn btn-gray" id="desencriptar">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="mensaje">
+            <div class="mensaje-contenedor">
+                <button id="borrar">&#10006;</button>
+                <div class="no-encriptado">
+                    <img id="img-no-encriptado" src="img/no-encontrado.png" />
+                    <div id="mensaje-no-encriptado">
+                        <h1>Ningún mensaje fue encontrado</h1>
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                </div>
+        
+                <div class="encriptado">
+                    <p id="mensaje-encriptado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, velit? Facere repudiandae incidunt nesciunt laudantium nam blanditiis? Placeat eveniet hic sint aut, alias cum quasi reiciendis eius similique quas inventore.
+                    </p>
+                    <p id="copiar-mensaje"></p>
+                    <button class="btn btn-gray" id="copiar">Copiar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p id="name">Mina Guevara</p>
+        <p>&copy; 2023</p>
+        <p><em>Proyecto creado para Allura Challenge ONE</em></p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
