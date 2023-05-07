@@ -259,3 +259,88 @@ footer p {
     margin: 0;
 }
 
+@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait) {
+    .logo {
+        width: 60px;
+        padding-left: 20px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto-usuario {
+        font-size: 25px;
+        width: calc(100% - 15%);
+        margin-left: 12%;
+        margin-top: 8%;
+    }
+
+    .info {
+        width: calc(100% - 15%);
+        margin-left: 9%;
+    }
+
+    .botones {
+        flex-direction: row;
+        gap: 10px;
+        width: calc(100% - 15%);
+        margin-left: 9%;
+        margin-top: 10px;
+    }
+
+    .btn {
+        padding: 20px;
+        gap: 8px;
+        width: 45%;
+        height: 60px;
+    }
+
+    .mensaje {
+        height: fit-content;
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    #img-no-encriptado {
+        display: none;
+    }
+
+    #mensaje-no-encriptado {
+        top: 0px;
+        padding: 25px 0;
+    }
+
+    #mensaje-no-encriptado h1 {
+        font-size: 25px;
+    }
+    
+    #mensaje-no-encriptado p {
+        font-size: 18px;
+    }
+
+    #mensaje-encriptado {
+        height: 400px;
+        margin-left: 8%;
+        margin-right: 8%;
+        top: 18px;
+    }
+
+    #copiar {
+        margin-top: 5px;
+        margin-bottom: 18px;
+    }
+
+    #copiar-mensaje {
+        top: 1180px;
+        left: 7%;
+    }
+
+    footer {
+        margin-top: 12%;
+    }
+}
